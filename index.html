@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillZone - Learn Smarter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SkillZone</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="javascript:void(0)" class="btn" onclick="openLogin()">Login</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to SkillZone</h1>
+      <p>Discover your learning path by exploring our categories</p>
+      <a href="#categories" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <section id="categories">
+    <h2 class="section-title">Explore Categories</h2>
+    <div class="categories">
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500" alt="Technology">
+        <h3>Technology</h3>
+        <ul>
+          <li>Web Development</li>
+          <li>Cloud Computing</li>
+          <li>Cybersecurity</li>
+        </ul>
+        <p><strong>Instructor:</strong> John Doe</p>
+      </div>
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Business">
+        <h3>Business</h3>
+        <ul>
+          <li>Marketing 101</li>
+          <li>Entrepreneurship</li>
+          <li>Project Management</li>
+        </ul>
+        <p><strong>Instructor:</strong> Lisa Smith</p>
+      </div>
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=500" alt="Design">
+        <h3>Design</h3>
+        <ul>
+          <li>UI/UX Fundamentals</li>
+          <li>Photoshop Basics</li>
+          <li>Graphic Design</li>
+        </ul>
+        <p><strong>Instructor:</strong> Alex Green</p>
+      </div>
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1634128221889-82ed6efebfc3?w=500" alt="Languages">
+        <h3>Languages</h3>
+        <ul>
+          <li>English Basics</li>
+          <li>French Intermediate</li>
+          <li>Spanish for Travel</li>
+        </ul>
+        <p><strong>Instructor:</strong> Maria Lopez</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <h3>Welcome to SkillZone</h3>
+        <p>
+          SkillZone is a leading online learning platform offering diverse categories of skill-building content. Whether you're starting out or looking to upgrade your skills, we provide high-quality, instructor-led resources to help you grow.
+        </p>
+        <p>
+          📌 <strong>Our Mission:</strong> To make high-quality education accessible to all.<br>
+          🚀 <strong>Our Vision:</strong> Empower learners to become future-ready professionals.
+        </p>
+      </div>
+      <div class="team-section">
+        <h3>Meet Our Team</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1740252117044-2af197eea287?w=500" alt="John">
+            <h4>John Doe</h4>
+            <p>Lead Developer & Educator</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1740252117027-4275d3f84385?w=500" alt="Lisa">
+            <h4>Lisa Smith</h4>
+            <p>Business Mentor</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1740252117070-7aa2955b25f8?w=500" alt="Alex">
+            <h4>Alex Green</h4>
+            <p>Design Specialist</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1740252117012-bb53ad05e370?w=500" alt="Maria">
+            <h4>Maria Lopez</h4>
+            <p>Language Instructor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-wrapper">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Full Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> support@skillzone.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Location:</strong> Chennai, India</p>
+        <p>Follow us on:</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank">🌐 Facebook</a>
+          <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+          <a href="https://www.linkedin.com" target="_blank">💼 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SkillZone. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
